@@ -10,28 +10,29 @@
 <body>
     <div class="container">
         <div class="column" id="left">
-            <h2>Stay Updated!</h2>
-            <p>Join 60,000+ product managers receiving monthly updates on:</p>
-            <ul>
-                <li>Product discovery and building what matters</li>
-                <li>Measuring to ensure updates are a success</li>
-                <li>And much more!</li>
-            </ul>
-            <div class="email-subscribe">
-                <div class="email-row">
-                    <p>Email address</p>
-                    <span id="msg-box"></span>
-                    
-                </div>
-                <input id="email" type="text" name="email" placeholder="email@company.com">
-                <button onclick="validator();" type="button">Subscribe to monthly newsletter</button>
-            </div>    
-            
+            <div class="content-container">
+                <h2>Stay Updated!</h2>
+                <p>Join 60,000+ product managers receiving monthly updates on:</p>
+                <ul>
+                    <li>Product discovery and building what matters</li>
+                    <li>Measuring to ensure updates are a success</li>
+                    <li>And much more!</li>
+                </ul>
+                <div class="email-subscribe">
+                    <div class="email-row">
+                        <p>Email address</p>
+                        <span id="msg-box"></span>
+                        
+                    </div>
+                    <input id="email" type="text" name="email" placeholder="email@company.com">
+                    <button onclick="validator();" type="button">Subscribe to monthly newsletter</button>
+                </div>    
+            </div>
         </div>
 
-        <div class="column">
-            
-            <img src="/assets/images/illustration-sign-up-desktop.svg">
+        <div class="column" id="right">
+            <img src="/assets/images/illustration-sign-up-mobile.svg" class="mobile-svg">
+            <img src="/assets/images/illustration-sign-up-desktop.svg" class="desktop-svg">
 
         </div>
     </div>

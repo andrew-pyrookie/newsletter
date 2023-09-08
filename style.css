@@ -16,6 +16,7 @@ body {
     margin-top: 10%;
     display: flex;
     padding: 35px;
+    position: relative;
    
 }
 
@@ -26,10 +27,14 @@ body {
     
 }
 
-.column img {
-    width:100%;
-    height: 100%;
-    margin-top: 10px;
+/* different svg for mobile*/
+.mobile-svg {
+    display: none; /*hidden by default */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
 }
 
 
@@ -98,4 +103,51 @@ button:hover {
 h2 {
     display: block;
     font-weight: 700;
+}
+
+/* media queries for mobile designs  */
+
+@media (max-width:767px) {
+    body {
+        background-color: white; /* Change the body background color for mobile */
+    }
+    
+    .container{
+        flex-direction: column;
+        background-color: transparent; /* Make the container background transparent for mobile */
+        border-radius: 0; /* Remove border-radius */
+        margin-top: 0; /* Remove margin-top */
+        height: 100%; /* Use 100% of the viewport height */
+        margin: 0;
+
+    
+    }
+
+    .column#left {
+        order: 2;
+        width: 100%;
+    }
+    .column#right {
+        order: 1;
+        width: 100%;
+    }
+
+    .mobile-svg {
+        display: block;
+        width: 100%;
+    }
+
+    .desktop-svg {
+        display: none;
+        width: 100%;
+    }  
+    .content-container {
+        position: relative;
+        padding-top: 200px;
+        left: 0;
+    }
+
+    .attribution{
+        display: none;
+    }
 }
